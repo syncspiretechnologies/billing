@@ -127,7 +127,7 @@ export default function InvoicePreviewFull({ invoice, settings: propSettings }: 
       {/* Invoice Preview - A4 Container */}
       <div
         ref={invoiceRef}
-        className="bg-white mx-auto shadow-2xl overflow-hidden relative flex flex-col"
+        className="bg-white mx-auto overflow-hidden relative flex flex-col"
         style={{
           width: "210mm",
           minHeight: "297mm",
@@ -237,7 +237,7 @@ export default function InvoicePreviewFull({ invoice, settings: propSettings }: 
             {/* Left: QR & Notes */}
             <div className="flex gap-8">
                <div className="flex flex-col gap-1">
-                 <div className="bg-white p-2 rounded-lg border border-gray-200 shadow-sm h-fit">
+                 <div className="bg-white p-2 rounded-lg border border-gray-200 h-fit">
                     <QRCodeSVG value={paymentInfo} size={90} level="M" />
                  </div>
                  {upiId && upiId.includes("@") && (
