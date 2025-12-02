@@ -16,6 +16,9 @@
   --color-slate-800: #1e293b;
   
   --color-emerald-600: #059669;
+  
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 @custom-variant dark (&:is(.dark *));
