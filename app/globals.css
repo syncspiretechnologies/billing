@@ -1,6 +1,23 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@theme {
+  /* Override default Tailwind colors with Hex values for html2pdf compatibility */
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+  
+  --color-slate-50: #f8fafc;
+  --color-slate-500: #64748b;
+  --color-slate-800: #1e293b;
+  
+  --color-emerald-600: #059669;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
